@@ -1,0 +1,183 @@
+[
+    {
+      "titulo": "Origen",
+      "director": "Christopher Nolan",
+      "anio_lanzamiento": 2010,
+      "genero": "Ciencia ficción",
+      "calificacion": 5,
+      "sinopsis": "Un ladrón de sueños se embarca en una misión épica.",
+      "actores_principales": ["Leonardo DiCaprio", "Ellen Page", "Tom Hardy"]
+    },
+    {
+      "titulo": "Sueño de Fuga",
+      "director": "Frank Darabont",
+      "anio_lanzamiento": 1994,
+      "genero": "Drama",
+      "calificacion": 5,
+      "sinopsis": "La historia de un hombre inocente en la prisión de Shawshank.",
+      "actores_principales": ["Tim Robbins", "Morgan Freeman"]
+    },
+    {
+      "titulo": "El Caballero de la Noche",
+      "director": "Christopher Nolan",
+      "anio_lanzamiento": 2008,
+      "genero": "Acción",
+      "calificacion": 4.5,
+      "sinopsis": "Batman enfrenta al Joker en una batalla épica por Gotham.",
+      "actores_principales": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+    },
+    {
+      "titulo": "Pulp Fiction",
+      "director": "Quentin Tarantino",
+      "anio_lanzamiento": 1994,
+      "genero": "Crimen",
+      "calificacion": 4.8,
+      "sinopsis": "Historias entrelazadas en el submundo del crimen.",
+      "actores_principales": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
+    },
+    {
+      "titulo": "Matrix",
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "anio_lanzamiento": 1999,
+      "genero": "Ciencia ficción",
+      "calificacion": 4.7,
+      "sinopsis": "Neo descubre la verdad detrás de la realidad.",
+      "actores_principales": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+    },
+    {
+      "titulo": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "anio_lanzamiento": 1994,
+      "genero": "Drama",
+      "calificacion": 4.9,
+      "sinopsis": "La extraordinaria vida de Forrest Gump.",
+      "actores_principales": ["Tom Hanks", "Robin Wright", "Gary Sinise"]
+    },
+    {
+      "titulo": "Interstellar",
+      "director": "Christopher Nolan",
+      "anio_lanzamiento": 2014,
+      "genero": "Ciencia ficción",
+      "calificacion": 4.6,
+      "sinopsis": "Un grupo de astronautas busca un nuevo hogar para la humanidad.",
+      "actores_principales": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+    },
+    {
+      "titulo": "El Padrino",
+      "director": "Francis Ford Coppola",
+      "anio_lanzamiento": 1972,
+      "genero": "Crimen",
+      "calificacion": 5,
+      "sinopsis": "El poder y la tragedia de la familia Corleone.",
+      "actores_principales": ["Marlon Brando", "Al Pacino", "James Caan"]
+    },
+    {
+      "titulo": "El Club de la Pelea",
+      "director": "David Fincher",
+      "anio_lanzamiento": 1999,
+      "genero": "Drama",
+      "calificacion": 4.8,
+      "sinopsis": "Una exploración subversiva de la identidad y la sociedad.",
+      "actores_principales": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"]
+    },
+    {
+      "titulo": "El Silencio de los Corderos",
+      "director": "Jonathan Demme",
+      "anio_lanzamiento": 1991,
+      "genero": "Thriller",
+      "calificacion": 4.9,
+      "sinopsis": "Un agente del FBI busca la ayuda de Hannibal Lecter para atrapar a un asesino en serie.",
+      "actores_principales": ["Jodie Foster", "Anthony Hopkins", "Scott Glenn"]
+    },
+    {
+      "titulo": "El Padrino",
+      "director": "Francis Ford Coppola",
+      "anio_lanzamiento": 1972,
+      "genero": "Crimen, Drama",
+      "calificacion": 5,
+      "sinopsis": "El poder y la tragedia de la familia Corleone.",
+      "actores_principales": ["Marlon Brando", "Al Pacino", "James Caan"]
+    },
+    {
+      "titulo": "Pulp Fiction",
+      "director": "Quentin Tarantino",
+      "anio_lanzamiento": 1994,
+      "genero": "Crimen, Drama",
+      "calificacion": 4.8,
+      "sinopsis": "Historias entrelazadas en el submundo del crimen.",
+      "actores_principales": ["John Travolta", "Samuel L. Jackson", "Uma Thurman"]
+    },
+    {
+      "titulo": "Forrest Gump",
+      "director": "Robert Zemeckis",
+      "anio_lanzamiento": 1994,
+      "genero": "Drama",
+      "calificacion": 4.9,
+      "sinopsis": "La extraordinaria vida de Forrest Gump.",
+      "actores_principales": ["Tom Hanks", "Robin Wright", "Gary Sinise"]
+    },
+    {
+      "titulo": "Matrix",
+      "director": "Lana Wachowski, Lilly Wachowski",
+      "anio_lanzamiento": 1999,
+      "genero": "Ciencia ficción",
+      "calificacion": 4.7,
+      "sinopsis": "Neo descubre la verdad detrás de la realidad.",
+      "actores_principales": ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+    },
+    {
+      "titulo": "Origen",
+      "director": "Christopher Nolan",
+      "anio_lanzamiento": 2010,
+      "genero": "Ciencia ficción",
+      "calificacion": 5,
+      "sinopsis": "Un ladrón de sueños se embarca en una misión épica.",
+      "actores_principales": ["Leonardo DiCaprio", "Ellen Page", "Tom Hardy"]
+    },
+    {
+      "titulo": "Sueño de Fuga",
+      "director": "Frank Darabont",
+      "anio_lanzamiento": 1994,
+      "genero": "Drama",
+      "calificacion": 5,
+      "sinopsis": "La historia de un hombre inocente en la prisión de Shawshank.",
+      "actores_principales": ["Tim Robbins", "Morgan Freeman"]
+    },
+    {
+      "titulo": "El Caballero de la Noche",
+      "director": "Christopher Nolan",
+      "anio_lanzamiento": 2008,
+      "genero": "Acción",
+      "calificacion": 4.5,
+      "sinopsis": "Batman enfrenta al Joker en una batalla épica por Gotham.",
+      "actores_principales": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+    },
+    {
+      "titulo": "Interstellar",
+      "director": "Christopher Nolan",
+      "anio_lanzamiento": 2014,
+      "genero": "Ciencia ficción",
+      "calificacion": 4.6,
+      "sinopsis": "Un grupo de astronautas busca un nuevo hogar para la humanidad.",
+      "actores_principales": ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+    },
+    {
+      "titulo": "El Club de la Pelea",
+      "director": "David Fincher",
+      "anio_lanzamiento": 1999,
+      "genero": "Drama",
+      "calificacion": 4.8,
+      "sinopsis": "Una exploración subversiva de la identidad y la sociedad.",
+      "actores_principales": ["Brad Pitt", "Edward Norton", "Helena Bonham Carter"]
+    },
+    {
+      "titulo": "El Silencio de los Corderos",
+      "director": "Jonathan Demme",
+      "anio_lanzamiento": 1991,
+      "genero": "Thriller",
+      "calificacion": 4.9,
+      "sinopsis": "Un agente del FBI busca la ayuda de Hannibal Lecter para atrapar a un asesino en serie.",
+      "actores_principales": ["Jodie Foster", "Anthony Hopkins", "Scott Glenn"]
+    }
+  ]
+  

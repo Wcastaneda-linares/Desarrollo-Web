@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Estilos generales de la tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+thead th, tbody td {
+  padding: 10px;
+  text-align: center;
+  border: #000 1px solid;
+}
+
+thead th {
+  background-color: #333;
+  color: #fff;
+  border: #000 1px solid;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+/* Estilos para la primera columna (Número) */
+tbody td:first-child {
+  font-weight: bold;
+}
+
+/* Estilos para las filas al pasar el mouse */
+tbody tr:hover {
+  background-color: #ddd;
+}
+
+h1 {
+  font-size: 36px;
+  color: #0043a1;
+  text-align: center;
+  font-family: fantasy, sans-serif, arial;
+  padding: 20px 0;
+  margin: 0;
+
+
+}
+/* Estilos para el encabezado de la tabla (h2) */
+h2 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #317151;
+}
+
+/* Estilos para el contenedor de la tabla */
+#tabla-peliculas {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Estilos para el botón Crear */
+.btn-create {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Color azul para Crear */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Estilos para el botón Leer */
+.btn-read {
+  padding: 10px 20px;
+  background-color: #28a745; /* Color verde para Leer */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Estilos para el botón Actualizar */
+.btn-update {
+  padding: 10px 20px;
+  background-color: #00927e; /* Color amarillo para Actualizar */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Estilo para el elemento input */
+input [type="text"]{
+  width: 100%; /* Ancho del 100% del contenedor */
+  padding: 10px; /* Relleno alrededor del texto dentro del input */
+  font-size: 16px; /* Tamaño de fuente */
+  border: 1px solid #ccc; /* Borde con color y grosor */
+  border-radius: 4px; /* Borde redondeado */
+}
+
+/* Estilo para el input en estado hover */
+input:hover {
+  border-color: #333; /* Cambiar el color del borde al pasar el mouse por encima */
+}
+
+/* Estilo para el input enfocado */
+input:focus {
+  outline: none; /* Eliminar el contorno enfocado predeterminado */
+  border-color: #007bff; /* Cambiar el color del borde cuando el input está enfocado */
+}
+
+
+/* Estilos para el botón Eliminar */
+.btn-delete {
+  padding: 10px 20px;
+  background-color: #dc3545; /* Color rojo para Eliminar */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Estilos para los botones al pasar el mouse */
+button:hover {
+  background-color: #0056b3;
+}
+.btn-delete:hover{
+  background-color: #450008;
+}
+.btn-update:hover {
+  background-color: #006e21;
+  color: #fff;
+}
+
+
+  </style>
+  <title>Gestión de Películas</title>
+</head>
+<body>
+  <h1>Gestión de Películas</h1>
+
+<hr>
+<div style="text-align: right;">
+  <h2 style="text-align: center;">Listado de Películas</h2>
+  <a href="/peliculas/create"><button id="create" class="btn-create">Crear Película</button></a>
+
+</div>
+<div  style="text-align: center;">
+    
+  </div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th>No.</th>
+        <th>Título</th>
+        <th>Director</th>
+        <th>Año</th>
+        <th>Género</th>
+        <th>Calificación</th>
+        <th>Sinopsis</th>
+        <th>Actores</th>
+        <th>Editar</th>
+        <th>Eliminar</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-peliculas"></tbody>
+  </table>
+
+  <script>
+    fetch('/peliculas')
+      .then(response => response.json())
+      .then(data => {
+        const tablaPeliculas = document.getElementById('tabla-peliculas');
+        var contador = 1;
+        data.forEach(pelicula => {
+          const fila = document.createElement('tr');
+          fila.innerHTML = `
+            <td>${contador++}</td>
+            <td>${pelicula.titulo}</td>
+            <td>${pelicula.director}</td>
+            <td>${pelicula.anio_lanzamiento}</td>
+            <td>${pelicula.genero}</td>
+            <td>${pelicula.calificacion}</td>
+            <td>${pelicula.sinopsis}</td>
+            <td>${pelicula.actores_principales.join(', ')}</td>
+            <td><a href="/peliculas/${pelicula._id}/update"><button id="update" class="btn-update">Actualizar</button></a></td>
+            <td><a href="/peliculas/${pelicula._id}/delete "><button class="btn-delete" onclick="return confirm('¿Estás seguro de que deseas eliminar esta película?')">Eliminar</button></a></td>
+
+          `;
+          tablaPeliculas.appendChild(fila);
+        });
+      });
+  </script>
+</body>
+</html>
